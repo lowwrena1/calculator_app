@@ -5,7 +5,7 @@
     font-weight: normal;
 }
 
-body{
+body {
     /*remove padding and margin so that background takes up the entire screen*/
     padding: 0;
     margin: 0;
@@ -15,5 +15,26 @@ body{
 .calculator-grid{
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    /* we will have 4 columns of buttons and 5 rows of buttons so we need to create our grids to fit that format. minmax says at minimum we want it certain size and max to be auto to fit any size number.*/
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+}
+ /*selecting all of the buttons*/
+.calculator-grid > button {
+    /* using a pointed cursor */
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .90);
+}
+
+.span-two {
+    grid-column: span 2;
 }
