@@ -13,12 +13,12 @@
     <!--grid helps create a proper layout for the calculator-->
     <div class="calculator-grid">
         <div class="output">
-             <div class="previous-operand"></div>
-             <div class="current-operand"></div>
+             <div data-previous-operand class="previous-operand"></div>
+             <div data-current-operand class="current-operand"></div>
         </div>
         <!--buttons on my calculator-->
-        <button class="span-two">Clear</button>
-        <button>Del</button>
+        <button data-clear class="span-two">Clear</button>
+        <button data-delete>Del</button>
         <button data-operation>/</button>
         <button data-number>1</button>
         <button data-number>2</button>
@@ -34,7 +34,7 @@
         <button data-operation>-</button>
         <button data-number>.</button>
         <button data-number>0</button>
-        <button class="span-two">=</button>
+        <button data-equals class="span-two">=</button>
     </div>
 </body>
 </html>
