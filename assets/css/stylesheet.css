@@ -1,0 +1,19 @@
+/* collect all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    /*remove padding and margin so that background takes up the entire screen*/
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #c06c84, #6c5b7b)
+}
+
+.calculator-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
