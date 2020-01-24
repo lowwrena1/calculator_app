@@ -38,9 +38,10 @@ body {
 .span-two {
     grid-column: span 2;
 }
-/*these next block of code makes the top where my calculations show fit from the begining to the ned of the row instead of being scattered*/
+/*these next block of code styles the top box of the calculator*/
 .output{
     grid-column: 1 / -1;
+    /*^^ this says that the top box will start at the first colum and go until the last colum*/
     background-color: rgba(0, 0, 0, .75);
     display: flex;
     align-items: flex-end;
