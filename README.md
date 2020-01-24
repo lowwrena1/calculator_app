@@ -1,2 +1,7 @@
 # calculator_app
-an application to do simple math using javascript.
+An application to assist in simple math.
+## Technologies used:
+ * html
+ * css
+ * javascript
+
